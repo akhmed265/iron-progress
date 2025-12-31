@@ -32,4 +32,4 @@ npm run dev
 
 ---
 
-Дизайн и разработка: **by Malachiyev**
+Дизайн и разработка: **[by Malachiyev](https://github.com/akhmed265)**
