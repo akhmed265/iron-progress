@@ -1,0 +1,25 @@
+// Светлая тема
+[data-theme="light"] {
+  --bg-primary: #F5F5F7;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #E5E5E7;
+  
+  --accent-1: #00C896;
+  --accent-2: #FF6B6B;
+  --accent-3: #00A8FF;
+  
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --text-muted: #9B9B9B;
+}
+
+// Переопределение переменных для светлой темы
+[data-theme="light"] {
+  $bg-primary: #F5F5F7;
+  $bg-secondary: #FFFFFF;
+  $bg-tertiary: #E5E5E7;
+  $text-primary: #1A1A1A;
+  $text-secondary: #6B6B6B;
+  $text-muted: #9B9B9B;
+}
+

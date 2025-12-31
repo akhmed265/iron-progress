@@ -1,0 +1,97 @@
+@import './variables';
+@import './light-theme';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $bg-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: $spacing-xl $spacing-md;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Scrollbar styles
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $bg-tertiary;
+  border-radius: $radius-full;
+  
+  &:hover {
+    background: $accent-3;
+  }
+}
+
+// Links
+a {
+  color: $accent-1;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $accent-3;
+  }
+}
+
+// Buttons
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all $transition-base;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: $spacing-sm; }
+.mt-2 { margin-top: $spacing-md; }
+.mt-3 { margin-top: $spacing-lg; }
+.mb-1 { margin-bottom: $spacing-sm; }
+.mb-2 { margin-bottom: $spacing-md; }
+.mb-3 { margin-bottom: $spacing-lg; }
+
+// Responsive
+@media (max-width: $breakpoint-mobile) {
+  .main-content {
+    padding: $spacing-md $spacing-sm;
+  }
+}
+
