@@ -432,6 +432,27 @@ watch(completedWorkouts, () => {
   gap: $spacing-md;
 }
 
+// Tablet styles (768px - 1023px)
+@media (max-width: $breakpoint-tablet) and (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+// Mobile styles
 @media (max-width: $breakpoint-mobile) {
   .dashboard-grid {
     grid-template-columns: 1fr;
@@ -443,6 +464,18 @@ watch(completedWorkouts, () => {
 
   .achievements-grid {
     grid-template-columns: 1fr;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
   }
 }
 </style>

@@ -14,6 +14,8 @@ export interface UserPreferences {
   units: 'metric' | 'imperial';
   notifications: boolean;
   soundEnabled: boolean;
+  nutritionGoal?: 'gain' | 'lose' | 'maintain';
+  targetCalories?: number;
 }
 
 export interface UserStats {

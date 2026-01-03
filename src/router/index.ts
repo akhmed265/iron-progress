@@ -22,6 +22,12 @@ const router = createRouter({
       meta: { title: 'Упражнения' }
     },
     {
+      path: '/nutrition',
+      name: 'nutrition',
+      component: () => import('@/views/NutritionView.vue'),
+      meta: { title: 'Питание' }
+    },
+    {
       path: '/diary',
       name: 'diary',
       component: () => import('@/views/DiaryView.vue'),

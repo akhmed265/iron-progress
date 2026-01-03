@@ -46,6 +46,7 @@ import homeIcon from '@/assets/icons/home-white.svg';
 import calendarWeekIcon from '@/assets/icons/calendar_week-white.svg';
 import timerIcon from '@/assets/icons/timer-white.svg';
 import notebookIcon from '@/assets/icons/notebool-white.svg';
+import nutritionIcon from '@/assets/icons/nutrition-white.svg';
 import userIcon from '@/assets/icons/user-white.svg';
 
 const route = useRoute();
@@ -55,6 +56,7 @@ const navLinks = [
   { path: '/', label: 'Главная', icon: 'home', iconPath: homeIcon },
   { path: '/plan', label: 'Мой план', icon: 'calendar-week', iconPath: calendarWeekIcon },
   { path: '/exercises', label: 'Упражнения', icon: 'timer', iconPath: timerIcon },
+  { path: '/nutrition', label: 'Питание', icon: 'nutrition', iconPath: nutritionIcon },
   { path: '/diary', label: 'Дневник', icon: 'notebook', iconPath: notebookIcon },
   { path: '/profile', label: 'Профиль', icon: 'user', iconPath: userIcon }
 ];

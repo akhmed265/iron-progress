@@ -89,6 +89,14 @@ button {
 .mb-3 { margin-bottom: $spacing-lg; }
 
 // Responsive
+// Tablet styles (768px - 1023px)
+@media (max-width: $breakpoint-tablet) and (min-width: 768px) {
+  .main-content {
+    padding: $spacing-lg $spacing-md;
+  }
+}
+
+// Mobile styles
 @media (max-width: $breakpoint-mobile) {
   .main-content {
     padding: $spacing-md $spacing-sm;
